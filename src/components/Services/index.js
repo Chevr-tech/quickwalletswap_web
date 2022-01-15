@@ -55,9 +55,7 @@ function Services() {
             <div className="offers-card" key={i}>
               {/* circle */}
               <div
-                className={
-                  i % 2 === 0 ? "offers-circle" : "offers-circle dnone"
-                }
+                className={i % 2 == 0 ? "offers-circle" : "offers-circle dnone"}
               ></div>
               <div
                 className={
@@ -65,7 +63,14 @@ function Services() {
                 }
               ></div>
               <div className="offers-image">
-                {/* <div dangerouslySetInnerHTML={{ __html: `${icon}` }}></div> */}
+                <img
+                  src={icon}
+                  alt=""
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
               </div>
               <div className="offers-title">{title}</div>
               <p className="offers-caption">{text}</p>
