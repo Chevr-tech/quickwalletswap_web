@@ -1,0 +1,80 @@
+import React from "react";
+import "../Services/style.css";
+import { data } from "./data";
+
+function Services() {
+  return (
+    <>
+      <div className="services">
+        <div
+          className="services-top"
+          style={{
+            maxWidth: "600px",
+          }}
+        >
+          <div className="services-title">
+            Perform cryptocurrency exchange , peer-2-peer transaction{" "}
+            <span
+              style={{
+                position: "relative",
+                top: "5px",
+                fontSize: "2.3rem",
+              }}
+            >
+              💵
+            </span>
+            , view current market status{" "}
+            <span
+              style={{
+                position: "relative",
+                top: "2px",
+                fontSize: "1.7rem",
+              }}
+            >
+              📈
+            </span>
+            {"  "}
+            and lots more...,
+            <span
+              style={{
+                position: "relative",
+                top: "5px",
+                fontSize: "2.3rem",
+              }}
+            >
+              👍
+            </span>
+          </div>
+          <div className="services-caption">
+            We unluck new boundaries in the crypto exchange space
+          </div>
+        </div>
+
+        <div className="service-details">
+          {data.map(({ icon, title, text }, i) => (
+            <div className="offers-card" key={i}>
+              {/* circle */}
+              <div
+                className={
+                  i % 2 === 0 ? "offers-circle" : "offers-circle dnone"
+                }
+              ></div>
+              <div
+                className={
+                  i % 2 !== 0 ? "offers-sm__circle" : "offers-sm__circle dnone"
+                }
+              ></div>
+              <div className="offers-image">
+                {/* <div dangerouslySetInnerHTML={{ __html: `${icon}` }}></div> */}
+              </div>
+              <div className="offers-title">{title}</div>
+              <p className="offers-caption">{text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Services;

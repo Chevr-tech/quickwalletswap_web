@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+
+.footer {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.form-group {
+  width: 100%;
+  height: 40px;
+  width: 100%;
+}
+
+.form-group input[type="email"] {
+  width: 80%;
+  height: inherit;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 0;
+}
+.form-group button {
+  border: none;
+  border-radius: 0;
+  width: 20%;
+  height: inherit;
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.form-label {
+  font-size: 0.78rem;
+  color: #888888;
+}
+.footer-brand {
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+.footer-brand img {
+  width: 40px;
+  height: 40px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+}
+.footer-brand h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-brand p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* SOCIAL */
+.social-cover {
+  text-align: center;
+  max-width: 300px;
+  min-width: 300px;
+  margin-top: 10px;
+}
+
+.social-links__cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-title,
+.newsletter-title,
+.support-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.social-links__cover {
+  margin-top: 10px;
+}
+
+.social-links__cover a {
+  text-decoration: none;
+}
+
+.social-link__name,
+.support-link__name {
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+/* NEWSLETTER */
+.newsletter-title {
+  margin-top: 10px;
+}
+
+/* SUPPORT */
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.support-link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.support-media {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

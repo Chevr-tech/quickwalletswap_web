@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Download from "./components/Download";
+import User from "./components/User";
+import Body from "./components/Body";
+import Market from "./components/Market";
+// const Hero = React.lazy(() => require("./components/Hero"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Body>
+        <Hero />
+        <Services />
+        <Download />
+        <User />
+        <Market />
+      </Body>
+
+      <Footer />
+    </>
   );
 }
 

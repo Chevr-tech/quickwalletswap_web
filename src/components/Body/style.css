@@ -1,0 +1,48 @@
+.body {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-one {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  /* right: -100px; */
+  z-index: -1;
+  filter: blur(60px);
+  opacity: 0.3;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: bgcolor;
+  /* animation-timing-function: ease; */
+  animation-direction: normal;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* border-radius: 50%; */
+  /* background-color: #85ffbd;
+  background-image: -webkit-linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background-image: -moz-linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background-image: -o-linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%); */
+
+  background-color: #74ebd5;
+  background-image: -webkit-linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background-image: -moz-linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background-image: -o-linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+
+  /* background-color: #00dbde;
+  background-image: -webkit-linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-image: -moz-linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-image: -o-linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%); */
+}
+/* @keyframes bgcolor {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
