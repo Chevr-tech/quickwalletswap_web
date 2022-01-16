@@ -8,7 +8,7 @@ import { FaInstagram, FaWhatsapp, FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="footer-section">
         <div
           style={{
             maxWidth: "1200px",
@@ -24,7 +24,7 @@ function Footer() {
           <div className="footer-brand">
             <img src="" alt="" />
             <h3>QWswap</h3>
-            <p>Fast and Seucre crypto exchange</p>
+            <p>Fast and Secure crypto exchange</p>
           </div>
 
           {/* SOCIAL */}

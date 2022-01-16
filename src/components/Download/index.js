@@ -7,7 +7,7 @@ import downloadimg from "../../assets/images/phonetop.png";
 function Download() {
   return (
     <>
-      <div className="download">
+      <div className="download" id="download-section">
         <div className="download-image">
           <img src={downloadimg} alt="dwonload image" />
         </div>

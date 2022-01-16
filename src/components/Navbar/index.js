@@ -13,13 +13,13 @@ function Navbar() {
           <div className="nav-brand__title">QWswap</div>
         </div>
         <div className="nav-link__cover">
-          <a href="" className="nav-link">
+          <a href="#service-section" className="nav-link">
             Service
           </a>
-          <a href="" className="nav-link">
+          <a href="#download-section" className="nav-link">
             Download
           </a>
-          <a href="" className="nav-link">
+          <a href="#footer-section" className="nav-link">
             Support
           </a>
         </div>

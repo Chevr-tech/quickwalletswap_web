@@ -5,7 +5,7 @@ import { data } from "./data";
 function Services() {
   return (
     <>
-      <div className="services">
+      <div className="services" id="service-section">
         <div
           className="services-top"
           style={{
