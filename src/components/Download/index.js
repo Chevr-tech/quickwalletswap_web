@@ -18,8 +18,7 @@ function Download() {
             <span style={{ color: "dodgerblue" }}>App store</span>
           </div>
           <div className="download-caption">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
-            nemo!
+            Built to accommodate all users on Andriod and IOS. Download now !!
           </div>
           <div className="download-btn__cover">
             <a href="/" className="download-btn">
