@@ -1,13 +1,14 @@
 .body {
   position: relative;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .circle-one {
   width: 800px;
   height: 400px;
   position: absolute;
-  /* right: -100px; */
   z-index: -1;
   filter: blur(60px);
   opacity: 0.3;
@@ -15,34 +16,40 @@
   left: 50%;
   transform: translateX(-50%);
   animation-name: bgcolor;
-  /* animation-timing-function: ease; */
   animation-direction: normal;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  /* border-radius: 50%; */
-  /* background-color: #85ffbd;
-  background-image: -webkit-linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  background-image: -moz-linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  background-image: -o-linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%); */
-
   background-color: #74ebd5;
   background-image: -webkit-linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
   background-image: -moz-linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
   background-image: -o-linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
   background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
-
-  /* background-color: #00dbde;
-  background-image: -webkit-linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-  background-image: -moz-linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-  background-image: -o-linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%); */
 }
-/* @keyframes bgcolor {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+.whatsapp {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: url("https://www.pngitem.com/pimgs/m/504-5043553_whats-app-whatsapp-logo-png-transparent-png.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px #d8d8d8a2;
+}
+
+.wbtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wbtn p {
+  color: #1e5c9b;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
