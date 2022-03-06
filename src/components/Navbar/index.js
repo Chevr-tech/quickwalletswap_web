@@ -8,22 +8,22 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="nav-brand">
+        <Link to="/" className="nav-brand">
           <div className="nav-brand__imgcover">
             <img src="" alt="" />
           </div>
           <div className="nav-brand__title">QWswap</div>
-        </div>
+        </Link>
         <div className="nav-link__cover">
-          <Link to="/#service-section" className="nav-link">
+          <a href="/#service-section" className="nav-link">
             Service
-          </Link>
-          <Link to="/#download-section" className="nav-link">
+          </a>
+          <a href="/#download-section" className="nav-link">
             Download
-          </Link>
-          <Link to="/" className="nav-link">
+          </a>
+          <a href="/" className="nav-link">
             Support
-          </Link>
+          </a>
           <Link to="/termsandcondition" className="nav-link">
             T & C
           </Link>
