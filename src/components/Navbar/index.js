@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Navbar/style.css";
 import { FaStream } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  useEffect(() => {}, []);
   return (
     <>
       <nav>
@@ -13,15 +15,18 @@ function Navbar() {
           <div className="nav-brand__title">QWswap</div>
         </div>
         <div className="nav-link__cover">
-          <a href="#service-section" className="nav-link">
+          <Link to="/#service-section" className="nav-link">
             Service
-          </a>
-          <a href="#download-section" className="nav-link">
+          </Link>
+          <Link to="/#download-section" className="nav-link">
             Download
-          </a>
-          <a href="#footer-section" className="nav-link">
+          </Link>
+          <Link to="/" className="nav-link">
             Support
-          </a>
+          </Link>
+          <Link to="/termsandcondition" className="nav-link">
+            T & C
+          </Link>
         </div>
         {/* <div className="nav-brand__menu">
           <FaStream color="dodgerblue" fontSize={"1.2rem"} />

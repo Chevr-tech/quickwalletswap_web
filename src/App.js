@@ -3,27 +3,25 @@ import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Download from "./components/Download";
-import User from "./components/User";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Body from "./components/Body";
-import Market from "./components/Market";
+import Home from "./screens/Home";
+import TandC from "./screens/TandC";
 // const Hero = React.lazy(() => require("./components/Hero"));
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Body>
-        <Hero />
-        <Services />
-        <Download />
-        <User />
-        <Market />
-      </Body>
-
-      <Footer />
+      <Router>
+        <Navbar />
+        <Body>
+          <Switch>
+            <Route exact path={"/"} component={Home} />
+            <Route exact path={"/termsandcondition"} component={TandC} />
+          </Switch>
+        </Body>
+        <Footer />
+      </Router>
     </>
   );
 }

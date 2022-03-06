@@ -12,3 +12,27 @@ body {
   height: 100%;
   font-family: "Poppins", sans-serif;
 }
+
+.tc-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 5px 0 3px 0;
+  width: fit-content;
+  border-bottom: 2px solid black;
+  margin: 0 0 5px 0;
+  color: #1c2f3f;
+}
+
+.tc-c {
+  font-size: 0.9rem;
+  color: #68737c;
+}
+
+.back {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.9rem;
+  padding: 20px 0 0 0;
+  color: dodgerblue;
+  text-decoration: underline;
+}
