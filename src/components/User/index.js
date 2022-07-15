@@ -12,7 +12,7 @@ function User(props) {
             An exchange built on{" "}
             <span
               style={{
-                color: "dodgerblue",
+                color: "#736af1",
                 textTransform: "uppercase",
               }}
             >
@@ -28,7 +28,7 @@ function User(props) {
                 {title}
                 <span
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "17px",
                   }}
                 >
                   {icon}

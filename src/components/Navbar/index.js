@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../Navbar/style.css";
 import { FaStream } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/weblogo.png";
 
 function Navbar() {
   useEffect(() => {}, []);
@@ -10,9 +11,16 @@ function Navbar() {
       <nav>
         <Link to="/" className="nav-brand">
           <div className="nav-brand__imgcover">
-            <img src="" alt="" />
+            <img
+              src={Logo}
+              alt=""
+              style={{
+                width: "40px",
+                height: "40px",
+              }}
+            />
           </div>
-          <div className="nav-brand__title">QWswap</div>
+          <div className="nav-brand__title">Ewallet</div>
         </Link>
         <div className="nav-link__cover">
           <a href="/#service-section" className="nav-link">

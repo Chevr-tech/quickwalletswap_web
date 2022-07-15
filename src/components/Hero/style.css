@@ -15,16 +15,17 @@
 .hero-title {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  color: #736af1;
   font-size: 2.5rem;
-  background: -webkit-linear-gradient(left, dodgerblue, #3489dd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(left, dodgerblue, #3489dd); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .hero-caption {
   color: #525252;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 .hero-cta {
@@ -38,7 +39,7 @@
 
 .hero-cta p {
   color: #fff;
-  background-color: #42a1ff;
+  background-color: #736af1;
   border-radius: 5px;
   padding: 10px 20px;
   box-shadow: 0 3px 10px #5a5a5a79;

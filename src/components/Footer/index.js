@@ -4,6 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { RiWhatsappFill } from "react-icons/ri";
 import { HiMail } from "react-icons/hi";
 import { FaInstagram, FaWhatsapp, FaTwitter } from "react-icons/fa";
+import Logo from "../../assets/images/weblogo.png";
 
 function Footer() {
   return (
@@ -22,8 +23,15 @@ function Footer() {
           }}
         >
           <div className="footer-brand">
-            <img src="" alt="" />
-            <h3>QWswap</h3>
+            <img
+              src={Logo}
+              alt="site logo"
+              style={{
+                width: "40px",
+                height: "40px",
+              }}
+            />
+            <h3>Ewallet</h3>
             <p>Fast and Secure crypto exchange</p>
           </div>
 
@@ -63,11 +71,18 @@ function Footer() {
             <div className="support-media">
               <a href="" className="support-link">
                 <HiMail color="#3f3f3f" fontSize={"1.5rem"} />
-                <p className="support-link__name">qwswap@gmail.com</p>
+                <p className="support-link__name">support@ewalletplug.com</p>
               </a>
             </div>
           </div>
-          <form action="" method="post" className="footer-form">
+          <form
+            action=""
+            method="post"
+            className="footer-form"
+            style={{
+              display: "none",
+            }}
+          >
             <p className="newsletter-title">Newsletter</p>
             <label htmlFor="email" className="form-label">
               Email

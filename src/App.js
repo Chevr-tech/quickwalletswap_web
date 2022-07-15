@@ -12,12 +12,13 @@ import TandC from "./screens/TandC";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Navbar />
         <Body>
           <Switch>
             <Route exact path={"/"} component={Home} />
             <Route exact path={"/termsandcondition"} component={TandC} />
+            <Route path={"*"} component={NotFound} />
           </Switch>
         </Body>
         <Footer />
@@ -27,3 +28,7 @@ function App() {
 }
 
 export default App;
+
+const NotFound = () => {
+  return <div>Page not found</div>;
+};

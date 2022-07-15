@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const TandC = () => {
+  const style = {};
   return (
     <>
       <div

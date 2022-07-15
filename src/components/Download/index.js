@@ -14,8 +14,8 @@ function Download() {
         <div className="download-content">
           <div className="download-title">
             Avaliable on both{" "}
-            <span style={{ color: "dodgerblue" }}>Play Store</span> and{" "}
-            <span style={{ color: "dodgerblue" }}>App store</span>
+            <span style={{ color: "#736af1" }}>Play Store</span> and{" "}
+            <span style={{ color: "#736af1" }}>App store</span>
           </div>
           <div className="download-caption">
             Built to accommodate all users on Andriod and IOS. Download now !!

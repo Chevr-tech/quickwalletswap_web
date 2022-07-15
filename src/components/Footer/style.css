@@ -54,7 +54,7 @@ form {
 .footer-brand img {
   width: 40px;
   height: 40px;
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   border-radius: 50%;
 }
 .footer-brand h3 {

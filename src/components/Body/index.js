@@ -16,7 +16,7 @@ function Body({ children }) {
         </p>
         <a
           href={
-            "https://wa.me/+2348102851218?text=Hello%20I%20would%20like%20to%20trade%20my:"
+            "https://wa.me/+2348102851218?text=Hello%20I%20would%20like%20to%20trade%20"
           }
           target={"_blank"}
           className="whatsapp"

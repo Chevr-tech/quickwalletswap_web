@@ -9,16 +9,18 @@ function Market() {
   const [data, setData] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  useEffect(async () => {
-    setLoading(true);
-    try {
-      const res = await axios.get(url);
-      setData(res.data);
-      // console.log(res.data[0]);
-      setLoading(false);
-    } catch (err) {
-      setError(err);
-    }
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      try {
+        const res = await axios.get(url);
+        setData(res.data);
+        // console.log(res.data);
+        setLoading(false);
+      } catch (err) {
+        setError(err);
+      }
+    })();
   }, []);
 
   return (
@@ -36,8 +38,8 @@ function Market() {
           {loading ? (
             <div> fetch market data...</div>
           ) : (
-            data.map((item) => (
-              <div className="market-card">
+            data.map((item, i) => (
+              <div className="market-card" key={i}>
                 <div className="market-card__top">
                   <div className="market-img">
                     <img src={item.image} alt={item.id} />
@@ -70,14 +72,14 @@ function Market() {
                       {item.price_change_percentage_24h.toFixed(2)}%
                     </div>
                     <div className="market-pc__trend">
-                      <img
+                      {/* <img
                         src={
                           item.price_change_percentage_24h > 0
                             ? greentrend
                             : redtrend
                         }
                         alt=""
-                      />
+                      /> */}
                     </div>
                   </div>
                 </div>
