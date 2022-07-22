@@ -18,7 +18,7 @@ function Hero() {
           <div className="hero-title">Fast and Secure P2P Crypto exchange</div>
           <div className="hero-caption">
             We understand that security has to be improved without affecting
-            speed. With qwswap, you can send and receive assets securely in
+            speed. With ewalletplug, you can send and receive assets securely in
             almost real time.
           </div>
           <div className="hero-cta" onClick={hanldeClick}>

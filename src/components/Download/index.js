@@ -18,10 +18,13 @@ function Download() {
             <span style={{ color: "#736af1" }}>App store</span>
           </div>
           <div className="download-caption">
-            Built to accommodate all users on Andriod and IOS. Download now !!
+            Built to accommodate all users on Andriod and IOS. Download now!!
           </div>
           <div className="download-btn__cover">
-            <a href="/" className="download-btn">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.chevrtech.ewalletplug"
+              className="download-btn"
+            >
               <img src={iosbtn} />
             </a>
             <a href="/" className="download-btn">

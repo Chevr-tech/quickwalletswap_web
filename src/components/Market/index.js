@@ -55,10 +55,10 @@ function Market() {
                       current price
                     </div>
                     <div className="market-currentprice__text">
+                      $
                       {item.current_price.toLocaleString("en-US", {
                         currency: "USD",
                       })}
-                      $
                     </div>
                   </div>
                   <div className="market-pc__cover">

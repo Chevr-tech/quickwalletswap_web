@@ -1,0 +1,86 @@
+/* backdrop */
+.backdrop {
+  width: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100000;
+  background: #0000000e;
+}
+
+.backdrop.active-mobile__nav {
+  display: block;
+}
+
+.mobile-nav__cover {
+  width: 220px;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  z-index: 100;
+  padding: 5px;
+  display: block;
+  position: fixed;
+  top: 0;
+  transition: all 350ms ease;
+  animation: mobileslide 350ms ease;
+}
+
+@keyframes mobileslide {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.mobile-nav__cover.active-mobile__nav {
+  display: block;
+}
+
+.mobile-brand__cover {
+  display: flex;
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: center;
+  /* background: #9c973e0a; */
+  padding: 5px 0 5px 0;
+}
+
+.mobile-brand__image {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.mobile-items {
+  margin-top: 10px;
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-links {
+  padding: 5px 0 5px 15px;
+  width: 100%;
+  margin: 7px 0;
+  font-size: 17px;
+  color: #333333;
+}
+
+.mobile-brand__name {
+  /* color: #474636; */
+  font-weight: bold;
+  font-size: 20px;
+}

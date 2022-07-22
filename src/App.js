@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route exact path={"/"} component={Home} />
             <Route exact path={"/termsandcondition"} component={TandC} />
-            <Route path={"*"} component={NotFound} />
+            {/* <Route path={"*"} component={NotFound} /> */}
           </Switch>
         </Body>
         <Footer />

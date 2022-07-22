@@ -1,8 +1,8 @@
 export const data = [
   {
     id: 1,
-    title: `Join the fast increasing users on QWswap  🧑🏾‍🤝‍🧑🏼`,
-    icon: ` 🧑🏾‍🤝‍🧑🏼`,
+    title: `Join the fast increasing users on Ewallet plug  🧑🏾‍🤝‍🧑🏼`,
+    icon: `🧑🏾‍🤝‍🧑🏼`,
     content: `Friendly user interface coupled with round the clock support keeps Our 1k plus users always  satisfied. Join us now!`,
   },
   {
