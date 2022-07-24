@@ -6,7 +6,7 @@ nav {
   background-color: #fff;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 3px 5px #e7e7e746;
   position: fixed;
@@ -53,14 +53,27 @@ nav {
   padding: 5px 20px;
 }
 
+.nav-container {
+  /* border: 1px solid green; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media (min-width: 630px) {
   .nav-link__cover {
     display: block;
+  }
+  .nav-container {
+    width: 95%;
   }
   .nav-brand__menu {
     display: none;
   }
   nav {
     justify-content: center;
+  }
+  .nav-brand {
   }
 }

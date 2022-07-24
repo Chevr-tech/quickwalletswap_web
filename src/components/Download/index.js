@@ -21,13 +21,13 @@ function Download() {
             Built to accommodate all users on Andriod and IOS. Download now!!
           </div>
           <div className="download-btn__cover">
+            <a href="/" className="download-btn">
+              <img src={iosbtn} />
+            </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.chevrtech.ewalletplug"
               className="download-btn"
             >
-              <img src={iosbtn} />
-            </a>
-            <a href="/" className="download-btn">
               <img
                 src={andriodbtn}
                 style={{

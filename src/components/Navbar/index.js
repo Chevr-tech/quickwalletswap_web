@@ -18,35 +18,37 @@ function Navbar() {
       )}
 
       <nav>
-        <Link to="/" className="nav-brand">
-          <div className="nav-brand__imgcover">
-            <img
-              src={Logo}
-              alt=""
-              style={{
-                width: "40px",
-                height: "40px",
-              }}
-            />
-          </div>
-          <div className="nav-brand__title">Ewallet</div>
-        </Link>
-        <div className="nav-link__cover">
-          <a href="/#service-section" className="nav-link">
-            Services
-          </a>
-          <a href="/#download-section" className="nav-link">
-            Download
-          </a>
-          <a href="/#footer-section" className="nav-link">
-            Support
-          </a>
-          <Link to="/termsandcondition" className="nav-link">
-            T & C
+        <div className="nav-container">
+          <Link to="/" className="nav-brand">
+            <div className="nav-brand__imgcover">
+              <img
+                src={Logo}
+                alt=""
+                style={{
+                  width: "40px",
+                  height: "40px",
+                }}
+              />
+            </div>
+            <div className="nav-brand__title">Ewallet</div>
           </Link>
-        </div>
-        <div className="nav-brand__menu" onClick={() => setShowNav(true)}>
-          <RiMenu3Line color="#000000" fontSize={"1.8rem"} />
+          <div className="nav-link__cover">
+            <a href="/#service-section" className="nav-link">
+              Services
+            </a>
+            <a href="/#download-section" className="nav-link">
+              Download
+            </a>
+            <a href="/#footer-section" className="nav-link">
+              Support
+            </a>
+            <Link to="/termsandcondition" className="nav-link">
+              T & C
+            </Link>
+          </div>
+          <div className="nav-brand__menu" onClick={() => setShowNav(true)}>
+            <RiMenu3Line color="#000000" fontSize={"1.8rem"} />
+          </div>
         </div>
       </nav>
     </>
