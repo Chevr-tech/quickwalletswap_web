@@ -22,7 +22,7 @@ function Download() {
           </div>
           <div className="download-btn__cover">
             <a href="/" className="download-btn">
-              <img src={iosbtn} />
+              <img src={iosbtn} alt={"iphone img"} />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.chevrtech.ewalletplug"
@@ -33,6 +33,7 @@ function Download() {
                 style={{
                   transform: "scale(1.1)",
                 }}
+                alt={"andriod img"}
               />
             </a>
           </div>
